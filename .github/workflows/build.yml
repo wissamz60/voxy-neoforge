@@ -4,8 +4,6 @@
 name: Build
 
 on:
- name: Build
-on:
   workflow_dispatch: # <-- C'est cette ligne qui active le bouton manuel
   push:
     branches: [ "main" ]
