@@ -4,10 +4,11 @@
 name: Build
 
 on:
+ name: Build
+on:
+  workflow_dispatch: # <-- C'est cette ligne qui active le bouton manuel
   push:
-    branches: ['**']
-  pull_request:
-    branches: ['**']
+    branches: [ "main" ]
 
 jobs:
   build:
